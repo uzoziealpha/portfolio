@@ -7,39 +7,148 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
+     
+    
   <!--   Navbar starts here-->  
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Obinna Uzozie</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#"></a>
-              <a class="nav-link" href="#">Portfolios</a>
-              <a class="nav-link" href="#">Contact</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Obi Uzozie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 <!--  Navbar Ends here-->
+    
+
+    <style>
+     body{
+       font-family: tahoma;
+     }
+
+     #home{
+       background: none;
+       height: 100%;
+     }
+
+
+     #home-bg-video{
+       position: fixed;
+       top: 50%;
+       left: 50%;
+       transform: translatex(-50%)  translateY(-50%);
+       min-width: 100%;
+       min-height: 100%;
+       width: auto;
+       height: auto;
+       z-index: -1;
+     }
+
+        #home-overlay{
+          background-color: rgba(0,0,0,0,4);
+          width: 100;
+          height: 100;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: -1;
+        }
+
+
+
+
+        #home-content{
+          width: 100%;
+          height: 100%;
+          display: table;
+          margin-top: 260px;
+        }
+
+        #home-content-inner{
+          display: table-cell;
+          vertical-align: middle;
+        }
+
+         #home-heading-1{
+           color: white;
+           font-size: 65px;
+           font-weight: 700px;
+           text-transform: uppercase;
+           margin: 0;
+           display: inline-block;
+         }
+
+
+         #home-heading h1 span{
+          
+           color: yellow;
+           font-weight: 700px;
+
+         }
+          #home-text p{
+            color: white;
+            font-size: 15px;
+            font-weight: 100;
+            margin: 8px 0 30px 0;
+          }
+
+
+          .btn-general{
+            font-family: tahoma;
+            border-radius: 28px;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin: 0 6px;
+            padding: 12px 46px 12px 46px;
+            transition: all 0.4s;
+            background-color: yellow;
+            color: white;
+          }
+
+
+    </style>
+
+    <title>Portfolio</title>
+
+  </head>
+  <body>
+
+<section id="home">
+  <video src="video/clouds.mp4" id="home-bg-video" autoplay loop muted></video>
+  
+  <div id="home-overlay">
+     <div class="container">
+       <div id="home-content">
+      <div id="home-content-inner" class="text-left">
+       <div id="home heading">
+         <h1 id="home-heading-1">Obi Uzozie</h1>
+         <h1 id="home-heading-2">Portfolio<span></span></h1> 
+       </div>
+        <div id="home-text">
+         <p>HELLO AND WELCOME
+
+         </p>
+        </div>
+        <div> id="home-btn">
+          <a href="" class="btn btn-general=button">Github</a>
+        </div>
+</div>
+      </div>
+  </div>
+
 
 <!-- Background Start--------->
-<div class="background">
-<img src="./images/obo.jpg" class="img-fluid">
-</div>
-<div class="heading-content text-center">
-    <h5>Hello, I'm</h5>
-    <h1>Obinna Uzozie</h1>
-    <p>WELCOME TO MY PORTFOLIO</p>
-</div>
-
 
 
 
@@ -71,5 +180,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     -->
+  </section>
   </body>
 </html>
